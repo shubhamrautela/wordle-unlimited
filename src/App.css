@@ -1,10 +1,90 @@
 .App {
-  text-align: center;
+  background-color: #121213;
+  text-align: center;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inner {
+  height: 100vh;
+  width: 500px;
+  /* border-left: 1px solid #555;
+  border-right: 1px solid #555;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  height: 50px;
+  width: 400px;
+  border-bottom: 0.5px solid #444;
+  color: white;
+  font-size: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon1, .icon2{
+  font-size: 30px;
+  color: #666;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 10px;
+}
+
+.box {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  height: 60px;
+  width: 60px;
+  /* background-color: #3a3a3c; */
+  background-color: #121213;
+  border: 2px solid #3a3a3c;
+  margin: 2.5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.keysRow1, .keysRow2, .keysRow3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+}
+.key{
+  min-height: 60px;
+  min-width: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(54, 42, 42, 0.329);
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,20 +93,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
